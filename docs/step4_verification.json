@@ -1,0 +1,20 @@
+{
+  "package_version": "0.4.0",
+  "contract_version": 1,
+  "contract_revision": 1,
+  "total_tests": 151,
+  "existing_tests": 103,
+  "new_tests": 48,
+  "test_result": "151 passed in 76.88s",
+  "original_step0_step2_code_unchanged": true,
+  "physical_face_pair_cases": 16,
+  "motion_run": "results/step4_20261106T154557-0500_58eb1f",
+  "task_runs": {
+    "wrong_side": "results/step4_tasks/wrong_side/step3_20261106T154823-0500_a75223",
+    "switch": "results/step4_tasks/switch/step3_20261106T154828-0500_74bad8"
+  },
+  "viewer_run": "results/step4_viewer/step3_20261106T154937-0500_20c76f",
+  "viewer_steps": 745,
+  "Jtravel_unit": "m",
+  "default_route_cost_unit": "s"
+}

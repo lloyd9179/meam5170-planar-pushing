@@ -1,0 +1,44 @@
+{
+  "env": {
+    "mu_ground": 0.3,
+    "mu_pusher": 0.5,
+    "pusher_mode": "velocity_servo",
+    "pusher_servo_gain": 500.0,
+    "dt_physics": 0.0002,
+    "dt_control": 0.02
+  },
+  "model": {
+    "mu_ground_nominal": 0.3,
+    "mu_pusher": 0.5
+  },
+  "mpc": {
+    "horizon": 15,
+    "dt": 0.02
+  },
+  "rule": {
+    "rotation_gain": 0.16,
+    "rotation_deadband": 0.02,
+    "max_offset_fraction": 0.6,
+    "face_hysteresis": 0.1
+  },
+  "supervisor": {
+    "position_tolerance": 0.005,
+    "angle_tolerance": 0.05235987755982989,
+    "goal_hold_seconds": 0.2,
+    "min_contact_hold_seconds": 0.5
+  },
+  "progress": {
+    "window_seconds": 1.0,
+    "position_scale": 0.04,
+    "angle_scale": 0.15,
+    "min_absolute_decrease": 0.01,
+    "min_relative_decrease": 0.02
+  },
+  "geometry": {
+    "corner_margin": 0.002
+  },
+  "monitor": {
+    "load_threshold": 0.01,
+    "match_s_tolerance": 0.003
+  }
+}

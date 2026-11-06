@@ -1,0 +1,176 @@
+{
+  "center": {
+    "mode": "center",
+    "duration_s": 3.9999999999996705,
+    "completed": true,
+    "viewer_requested": true,
+    "viewer_sync_frames": 200,
+    "translation_m": 0.09662360292167989,
+    "delta_x_m": 0.09662360290670599,
+    "delta_y_m": -1.7010775530424517e-06,
+    "yaw_change_rad": -2.4497820926791422e-05,
+    "yaw_change_deg": -0.0014036217463724153,
+    "pusher_contact_steps": 194,
+    "peak_pusher_normal_force_N": 0.9568406861720695,
+    "minimum_contact_distance_m": -0.00041064402060283286,
+    "max_vertical_drift_m": 0.00017277714234283613,
+    "max_tilt_rad": 0.00018220411128847048,
+    "friction": {
+      "mu_ground": 0.3,
+      "ground_slider": {
+        "friction": [
+          0.3,
+          0.3,
+          0.001,
+          0.0001,
+          0.0001
+        ],
+        "condim": 3
+      },
+      "mu_pusher": 0.5,
+      "pusher_slider": {
+        "friction": [
+          0.5,
+          0.5,
+          0.001,
+          0.0001,
+          0.0001
+        ],
+        "condim": 3
+      }
+    },
+    "initial": {
+      "slider_position": [
+        0.0,
+        0.0,
+        0.0102
+      ],
+      "theta": 0.0,
+      "pusher_position": [
+        -0.073,
+        0.0
+      ],
+      "slider_linear_velocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "slider_angular_velocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "time": 0.0
+    },
+    "final": {
+      "slider_position": [
+        0.09662360290670599,
+        -1.7010775530424517e-06,
+        0.009993084518960589
+      ],
+      "theta": -2.4497820926791422e-05,
+      "pusher_position": [
+        0.026999999999996558,
+        0.0
+      ],
+      "slider_linear_velocity": [
+        0.02409054276415027,
+        -1.2968094131462468e-06,
+        0.0022453755582076875
+      ],
+      "slider_angular_velocity": [
+        -7.29285754427988e-07,
+        -0.008822674459722563,
+        -1.691337237243187e-05
+      ],
+      "time": 3.9999999999996705
+    }
+  },
+  "offcenter": {
+    "mode": "offcenter",
+    "duration_s": 3.9999999999996705,
+    "completed": true,
+    "viewer_requested": true,
+    "viewer_sync_frames": 200,
+    "translation_m": 0.08577127469374492,
+    "delta_x_m": 0.08091119024723711,
+    "delta_y_m": -0.02846209506282433,
+    "yaw_change_rad": -0.37152455086758496,
+    "yaw_change_deg": -21.286788750206085,
+    "pusher_contact_steps": 194,
+    "peak_pusher_normal_force_N": 0.8977589048180621,
+    "minimum_contact_distance_m": -0.0004473861250649102,
+    "max_vertical_drift_m": 0.00017277714234283613,
+    "max_tilt_rad": 0.0007009864670471876,
+    "friction": {
+      "mu_ground": 0.3,
+      "ground_slider": {
+        "friction": [
+          0.3,
+          0.3,
+          0.001,
+          0.0001,
+          0.0001
+        ],
+        "condim": 3
+      },
+      "mu_pusher": 0.5,
+      "pusher_slider": {
+        "friction": [
+          0.5,
+          0.5,
+          0.001,
+          0.0001,
+          0.0001
+        ],
+        "condim": 3
+      }
+    },
+    "initial": {
+      "slider_position": [
+        0.0,
+        0.0,
+        0.0102
+      ],
+      "theta": 0.0,
+      "pusher_position": [
+        -0.073,
+        0.025
+      ],
+      "slider_linear_velocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "slider_angular_velocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "time": 0.0
+    },
+    "final": {
+      "slider_position": [
+        0.08091119024723711,
+        -0.02846209506282433,
+        0.009986205393337779
+      ],
+      "theta": -0.37152455086758496,
+      "pusher_position": [
+        0.026999999999996558,
+        0.025
+      ],
+      "slider_linear_velocity": [
+        0.01729997672623759,
+        -0.010396888292227312,
+        0.0019808909818258653
+      ],
+      "slider_angular_velocity": [
+        -0.0011413444243716254,
+        -0.002344890122579259,
+        -0.10081670384053938
+      ],
+      "time": 3.9999999999996705
+    }
+  }
+}

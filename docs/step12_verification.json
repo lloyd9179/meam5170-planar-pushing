@@ -1,0 +1,13 @@
+{
+  "tests": 67,
+  "step0": 25,
+  "model": 21,
+  "mpc": 12,
+  "integration": 9,
+  "test_result": "67 passed in 16.53s",
+  "display_variables_removed": true,
+  "ros_pythonpath_removed": true,
+  "original_step0_demo_sha256": "8dbcaa03a44395824cbc07eb439d891605c97728c4de5f69dbe3db6c1695a8ac",
+  "original_step0_xml_sha256": "602cc8d9ae8e16b71a4ec1b32d80d3904da5954242699b718cb1b31925bc02c4",
+  "viewer_smoke_steps_per_task": 100
+}

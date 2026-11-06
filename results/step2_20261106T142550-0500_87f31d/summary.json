@@ -1,0 +1,274 @@
+{
+  "mujoco_translation": {
+    "task": "translation",
+    "backend": "mujoco",
+    "goal": [
+      0.04,
+      0.0,
+      0.0
+    ],
+    "initial": [
+      2.6801187222876277e-06,
+      2.2168715079597195e-14,
+      4.882373707787918e-12,
+      -9.097056325653198e-15
+    ],
+    "final": [
+      0.03999976238867139,
+      -4.220716943804743e-05,
+      -4.8770104467397385e-06,
+      1.587031334233588e-06
+    ],
+    "initial_position_error_m": 0.039997319881277714,
+    "final_position_error_m": 4.2207838266316486e-05,
+    "initial_yaw_error_rad": 4.882373707787918e-12,
+    "final_yaw_error_rad": 4.8770104467397385e-06,
+    "termination": "duration_complete",
+    "execution_steps": 300,
+    "solve_count": 300,
+    "fallbacks": 0,
+    "slip_flag_steps": 0,
+    "contact_lost_steps": 5,
+    "sticking_infeasible_commands": 0,
+    "max_s_drift_m": 2.6626244737894087e-05,
+    "mean_solve_time_ms": 10.969754086666702,
+    "max_solve_time_ms": 12.738912000259006,
+    "max_constraint_violation": 2.7755575615628914e-17,
+    "total_wall_s": 4.85994261399992,
+    "model_config": {
+      "slider_length": 0.12,
+      "slider_width": 0.08,
+      "ell": 0.041633319989322654,
+      "mu_pusher": 0.5,
+      "mu_ground_nominal": 0.3,
+      "fd_step": 1e-06,
+      "corner_margin": 0.002
+    },
+    "mpc_config": {
+      "horizon": 15,
+      "dt": 0.02,
+      "Q": [
+        [
+          20.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          20.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          5.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "Qf": [
+        [
+          80.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          80.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          20.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "R": [
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.0,
+          0.1
+        ]
+      ],
+      "Rd": [
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.0,
+          0.2
+        ]
+      ],
+      "velocity_lower": [
+        0.0,
+        -0.025
+      ],
+      "velocity_upper": [
+        0.025,
+        0.025
+      ],
+      "warm_start": true,
+      "regularization": 1e-09,
+      "eps_abs": 1e-07,
+      "eps_rel": 1e-07,
+      "max_iter": 4000,
+      "acceptance_tolerance": 5e-06
+    }
+  },
+  "mujoco_rotation": {
+    "task": "rotation",
+    "backend": "mujoco",
+    "goal": [
+      0.03293194288959019,
+      -0.009601306146257595,
+      -0.1255813953488375
+    ],
+    "initial": [
+      2.920845477170888e-06,
+      -4.219874069426473e-08,
+      -1.2011921007060252e-05,
+      0.019999538496062258
+    ],
+    "final": [
+      0.03400023859841351,
+      -0.006935890140176577,
+      -0.12526102206808307,
+      0.015704002224583194
+    ],
+    "initial_position_error_m": 0.03430021519133034,
+    "final_position_error_m": 0.0028715323795777048,
+    "initial_yaw_error_rad": 0.12556938342783044,
+    "final_yaw_error_rad": 0.0003203732807544324,
+    "termination": "duration_complete",
+    "execution_steps": 300,
+    "solve_count": 300,
+    "fallbacks": 0,
+    "slip_flag_steps": 61,
+    "contact_lost_steps": 17,
+    "sticking_infeasible_commands": 0,
+    "max_s_drift_m": 0.004295536271479064,
+    "mean_solve_time_ms": 11.017506113341065,
+    "max_solve_time_ms": 11.721077000402147,
+    "max_constraint_violation": 1.4135148180925835e-16,
+    "total_wall_s": 4.880878227000267,
+    "model_config": {
+      "slider_length": 0.12,
+      "slider_width": 0.08,
+      "ell": 0.041633319989322654,
+      "mu_pusher": 0.5,
+      "mu_ground_nominal": 0.3,
+      "fd_step": 1e-06,
+      "corner_margin": 0.002
+    },
+    "mpc_config": {
+      "horizon": 15,
+      "dt": 0.02,
+      "Q": [
+        [
+          20.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          20.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          5.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "Qf": [
+        [
+          80.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          80.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          20.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "R": [
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.0,
+          0.1
+        ]
+      ],
+      "Rd": [
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.0,
+          0.2
+        ]
+      ],
+      "velocity_lower": [
+        0.0,
+        -0.025
+      ],
+      "velocity_upper": [
+        0.025,
+        0.025
+      ],
+      "warm_start": true,
+      "regularization": 1e-09,
+      "eps_abs": 1e-07,
+      "eps_rel": 1e-07,
+      "max_iter": 4000,
+      "acceptance_tolerance": 5e-06
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "step1_final": "results/step1_20261106T143248-0500_b587de",
+  "step2_final": "results/step2_20261106T143255-0500_c25ccc",
+  "legacy_runs": {
+    "results/step1_20261106T141831-0500_5bdf16": "Original mocap comparison (known missing pusher velocity)",
+    "results/step2_20261106T142226-0500_ca4168": "Original mocap MPC: rotation leaves face, preserved failure",
+    "results/step1_20261106T142402-0500_85ad1e": "Intermediate servo: 1 ms physics, gain 1000",
+    "results/step2_20261106T142405-0500_a5c4f1": "Intermediate servo contact-chatter failures, original endpoint loss guard",
+    "results/step2_20261106T142550-0500_87f31d": "Verified servo refinement, 0.2 ms physics / gain 500, before final metadata additions"
+  }
+}

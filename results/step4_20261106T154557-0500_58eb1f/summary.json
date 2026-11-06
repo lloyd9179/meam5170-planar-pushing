@@ -1,0 +1,948 @@
+{
+  "opposite": {
+    "start": {
+      "face": "right",
+      "s": 0.0
+    },
+    "target": {
+      "face": "left",
+      "s": 0.0
+    },
+    "theta": 0.0,
+    "initial_pusher_position": [
+      0.06998148395033822,
+      -7.519281914898173e-14
+    ],
+    "final_pusher_position": [
+      -0.06999593200409747,
+      -7.309894183897771e-12
+    ],
+    "termination": "ready:loaded_target_contact",
+    "steps": 655,
+    "duration_s": 13.09999999999563,
+    "actual_length_m": 0.27661482250005315,
+    "final_contact": {
+      "face": "left",
+      "measured_s": 3.02054406789282e-13,
+      "gap": -5.238851134395026e-06,
+      "in_bounds": true,
+      "loaded": true,
+      "normal_force": 0.06512961543846335,
+      "slip_speed": -2.2481700445390995e-11,
+      "point_error": 2.626979258055823e-06
+    },
+    "final_contact_matches": true,
+    "min_transit_clearance_m": 0.005646899386531521,
+    "transit_loaded_samples": 0,
+    "max_transit_slider_translation_m": 4.2329489995807744e-12,
+    "total_slider_translation_m": 1.5092636114759886e-06,
+    "max_speed_m_s": 0.030000000000000006,
+    "plans": [
+      {
+        "time": 0.22000000000000425,
+        "reason": "initial_plan",
+        "plan": {
+          "target": {
+            "face": "left",
+            "s": 0.0
+          },
+          "waypoints_world": [
+            [
+              0.06998148395033822,
+              -7.519281914898173e-14
+            ],
+            [
+              0.07599731988115667,
+              -6.704561077625439e-14
+            ],
+            [
+              0.07599731988123251,
+              -0.05599999999988826
+            ],
+            [
+              -0.07600268011876748,
+              -0.056000000000094106
+            ],
+            [
+              -0.07800268011884333,
+              -9.681726506124956e-14
+            ]
+          ],
+          "slider_pose_anchor": [
+            -2.680118843329943e-06,
+            8.817639278017442e-15,
+            1.354293645375218e-12
+          ],
+          "retreat_end_index": 1,
+          "precontact_gap": 0.008,
+          "clearance": 0.005
+        },
+        "length_m": 0.2700515388351273,
+        "cost": {
+          "total": 12.28307175755717,
+          "unit": "s",
+          "components": [
+            [
+              "Jtravel_m",
+              0.2700515388351273
+            ],
+            [
+              "retreat_m",
+              0.006015835930818447
+            ],
+            [
+              "transit_m",
+              0.26403570290430883
+            ],
+            [
+              "approach_m",
+              0.008
+            ],
+            [
+              "nominal_motion_s",
+              11.868912492198191
+            ],
+            [
+              "turn_radians",
+              6.283185307179586
+            ],
+            [
+              "turn_penalty_s",
+              0.3141592653589793
+            ],
+            [
+              "settle_s",
+              0.1
+            ]
+          ]
+        }
+      }
+    ],
+    "events": [
+      {
+        "time": 13.29999999999568,
+        "event": "ready",
+        "reason": "loaded_target_contact"
+      }
+    ],
+    "viewer": false,
+    "configs": {
+      "env": {
+        "slider_size": [
+          0.12,
+          0.08,
+          0.02
+        ],
+        "slider_mass": 0.2,
+        "slider_pose": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pusher_position": null,
+        "pusher_radius": 0.01,
+        "pusher_height": 0.016,
+        "goal_pose": [
+          0.12,
+          0.03,
+          0.4
+        ],
+        "mu_ground": 0.3,
+        "mu_pusher": 0.5,
+        "dt_physics": 0.0002,
+        "dt_control": 0.02,
+        "max_pusher_speed": 0.08,
+        "pusher_mode": "velocity_servo",
+        "pusher_servo_gain": 500.0,
+        "pusher_mass": 0.1
+      },
+      "motion": {
+        "dt": 0.02,
+        "retreat_speed": 0.015,
+        "transit_speed": 0.03,
+        "approach_speed": 0.003,
+        "position_gain": 6.0,
+        "waypoint_tolerance": 0.0004,
+        "execution_clearance": 0.0015,
+        "settle_seconds": 0.1,
+        "settle_timeout": 2.0,
+        "slider_linear_tolerance": 0.0015,
+        "slider_angular_tolerance": 0.02,
+        "pose_replan_distance": 0.001,
+        "pose_replan_angle": 0.02,
+        "max_replans": 3,
+        "max_seconds": 30.0,
+        "approach_timeout": 10.0,
+        "contact_hold_seconds": 0.04,
+        "preload_depth": 0.0001,
+        "max_approach_penetration": 0.0008,
+        "max_recovery_penetration": 0.001
+      },
+      "planner": {
+        "clearance": 0.005,
+        "vertex_padding": 0.001,
+        "precontact_gap": 0.008,
+        "max_recovery_penetration": 0.001
+      },
+      "cost": {
+        "retreat_speed": 0.015,
+        "transit_speed": 0.03,
+        "approach_speed": 0.003,
+        "turn_seconds_per_radian": 0.05,
+        "fixed_settle_seconds": 0.1
+      }
+    }
+  },
+  "adjacent": {
+    "start": {
+      "face": "left",
+      "s": 0.0
+    },
+    "target": {
+      "face": "bottom",
+      "s": 0.018
+    },
+    "theta": 0.0,
+    "initial_pusher_position": [
+      -0.06998148395027379,
+      -3.286171838580384e-13
+    ],
+    "final_pusher_position": [
+      -0.017996544729741132,
+      -0.04999022447365055
+    ],
+    "termination": "ready:loaded_target_contact",
+    "steps": 394,
+    "duration_s": 7.880000000007795,
+    "actual_length_m": 0.1270276034287262,
+    "final_contact": {
+      "face": "bottom",
+      "measured_s": 0.01799960783910961,
+      "gap": -5.613234854441249e-06,
+      "in_bounds": true,
+      "loaded": true,
+      "normal_force": 0.06969311958757905,
+      "slip_speed": -1.5769135649290704e-06,
+      "point_error": 3.4810962341265227e-06
+    },
+    "final_contact_matches": true,
+    "min_transit_clearance_m": 0.005646899386010202,
+    "transit_loaded_samples": 0,
+    "max_transit_slider_translation_m": 1.8609002332399278e-12,
+    "total_slider_translation_m": 4.061214284380525e-06,
+    "max_speed_m_s": 0.030000000000000006,
+    "plans": [
+      {
+        "time": 0.22000000000000425,
+        "reason": "initial_plan",
+        "plan": {
+          "target": {
+            "face": "bottom",
+            "s": 0.018
+          },
+          "waypoints_world": [
+            [
+              -0.06998148395027379,
+              -3.286171838580384e-13
+            ],
+            [
+              -0.07599731988127771,
+              -3.579887430379378e-13
+            ],
+            [
+              -0.0759973198810043,
+              -0.05600000000034889
+            ],
+            [
+              -0.017997319880994535,
+              -0.058000000000065714
+            ]
+          ],
+          "slider_pose_anchor": [
+            2.6801187222876277e-06,
+            2.2168715079597195e-14,
+            4.882373707787918e-12
+          ],
+          "retreat_end_index": 1,
+          "precontact_gap": 0.008,
+          "clearance": 0.005
+        },
+        "length_m": 0.12005030844518245,
+        "cost": {
+          "total": 7.204490928225447,
+          "unit": "s",
+          "components": [
+            [
+              "Jtravel_m",
+              0.12005030844518245
+            ],
+            [
+              "retreat_m",
+              0.006015835931003924
+            ],
+            [
+              "transit_m",
+              0.11403447251417853
+            ],
+            [
+              "approach_m",
+              0.008
+            ],
+            [
+              "nominal_motion_s",
+              6.868871479206213
+            ],
+            [
+              "turn_radians",
+              4.71238898038469
+            ],
+            [
+              "turn_penalty_s",
+              0.23561944901923448
+            ],
+            [
+              "settle_s",
+              0.1
+            ]
+          ]
+        }
+      }
+    ],
+    "events": [
+      {
+        "time": 8.080000000007846,
+        "event": "ready",
+        "reason": "loaded_target_contact"
+      }
+    ],
+    "viewer": false,
+    "configs": {
+      "env": {
+        "slider_size": [
+          0.12,
+          0.08,
+          0.02
+        ],
+        "slider_mass": 0.2,
+        "slider_pose": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pusher_position": null,
+        "pusher_radius": 0.01,
+        "pusher_height": 0.016,
+        "goal_pose": [
+          0.12,
+          0.03,
+          0.4
+        ],
+        "mu_ground": 0.3,
+        "mu_pusher": 0.5,
+        "dt_physics": 0.0002,
+        "dt_control": 0.02,
+        "max_pusher_speed": 0.08,
+        "pusher_mode": "velocity_servo",
+        "pusher_servo_gain": 500.0,
+        "pusher_mass": 0.1
+      },
+      "motion": {
+        "dt": 0.02,
+        "retreat_speed": 0.015,
+        "transit_speed": 0.03,
+        "approach_speed": 0.003,
+        "position_gain": 6.0,
+        "waypoint_tolerance": 0.0004,
+        "execution_clearance": 0.0015,
+        "settle_seconds": 0.1,
+        "settle_timeout": 2.0,
+        "slider_linear_tolerance": 0.0015,
+        "slider_angular_tolerance": 0.02,
+        "pose_replan_distance": 0.001,
+        "pose_replan_angle": 0.02,
+        "max_replans": 3,
+        "max_seconds": 30.0,
+        "approach_timeout": 10.0,
+        "contact_hold_seconds": 0.04,
+        "preload_depth": 0.0001,
+        "max_approach_penetration": 0.0008,
+        "max_recovery_penetration": 0.001
+      },
+      "planner": {
+        "clearance": 0.005,
+        "vertex_padding": 0.001,
+        "precontact_gap": 0.008,
+        "max_recovery_penetration": 0.001
+      },
+      "cost": {
+        "retreat_speed": 0.015,
+        "transit_speed": 0.03,
+        "approach_speed": 0.003,
+        "turn_seconds_per_radian": 0.05,
+        "fixed_settle_seconds": 0.1
+      }
+    }
+  },
+  "same_face": {
+    "start": {
+      "face": "left",
+      "s": -0.02
+    },
+    "target": {
+      "face": "left",
+      "s": 0.02
+    },
+    "theta": 0.0,
+    "initial_pusher_position": [
+      -0.06998123244482646,
+      -0.02000033693738311
+    ],
+    "final_pusher_position": [
+      -0.06998820710692517,
+      0.019999019767629155
+    ],
+    "termination": "ready:loaded_target_contact",
+    "steps": 257,
+    "duration_s": 5.140000000002458,
+    "actual_length_m": 0.05342571870652619,
+    "final_contact": {
+      "face": "left",
+      "measured_s": 0.019999617788409512,
+      "gap": -5.223608797571763e-06,
+      "in_bounds": true,
+      "loaded": true,
+      "normal_force": 0.06462737027676388,
+      "slip_speed": -2.380947569091021e-06,
+      "point_error": 2.6118192235920173e-06
+    },
+    "final_contact_matches": true,
+    "min_transit_clearance_m": 0.0056473230794754446,
+    "transit_loaded_samples": 0,
+    "max_transit_slider_translation_m": 8.421699224098328e-13,
+    "total_slider_translation_m": 3.8239192418134885e-06,
+    "max_speed_m_s": 0.030000000000000006,
+    "plans": [
+      {
+        "time": 0.22000000000000425,
+        "reason": "initial_plan",
+        "plan": {
+          "target": {
+            "face": "left",
+            "s": 0.02
+          },
+          "waypoints_world": [
+            [
+              -0.06998123244482646,
+              -0.02000033693738311
+            ],
+            [
+              -0.07599683891907998,
+              -0.020000409195128122
+            ],
+            [
+              -0.0779973193819557,
+              0.019999105283845908
+            ]
+          ],
+          "slider_pose_anchor": [
+            2.920846699012669e-06,
+            4.2198987249814394e-08,
+            1.2011714084059635e-05
+          ],
+          "retreat_end_index": 1,
+          "precontact_gap": 0.008,
+          "clearance": 0.005
+        },
+        "length_m": 0.04606511434477249,
+        "cost": {
+          "total": 4.659770326661488,
+          "unit": "s",
+          "components": [
+            [
+              "Jtravel_m",
+              0.04606511434477249
+            ],
+            [
+              "retreat_m",
+              0.006015606474687488
+            ],
+            [
+              "transit_m",
+              0.040049507870085
+            ],
+            [
+              "approach_m",
+              0.008
+            ],
+            [
+              "nominal_motion_s",
+              4.402690693981999
+            ],
+            [
+              "turn_radians",
+              3.141592653589793
+            ],
+            [
+              "turn_penalty_s",
+              0.15707963267948966
+            ],
+            [
+              "settle_s",
+              0.1
+            ]
+          ]
+        }
+      }
+    ],
+    "events": [
+      {
+        "time": 5.34000000000242,
+        "event": "ready",
+        "reason": "loaded_target_contact"
+      }
+    ],
+    "viewer": false,
+    "configs": {
+      "env": {
+        "slider_size": [
+          0.12,
+          0.08,
+          0.02
+        ],
+        "slider_mass": 0.2,
+        "slider_pose": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pusher_position": null,
+        "pusher_radius": 0.01,
+        "pusher_height": 0.016,
+        "goal_pose": [
+          0.12,
+          0.03,
+          0.4
+        ],
+        "mu_ground": 0.3,
+        "mu_pusher": 0.5,
+        "dt_physics": 0.0002,
+        "dt_control": 0.02,
+        "max_pusher_speed": 0.08,
+        "pusher_mode": "velocity_servo",
+        "pusher_servo_gain": 500.0,
+        "pusher_mass": 0.1
+      },
+      "motion": {
+        "dt": 0.02,
+        "retreat_speed": 0.015,
+        "transit_speed": 0.03,
+        "approach_speed": 0.003,
+        "position_gain": 6.0,
+        "waypoint_tolerance": 0.0004,
+        "execution_clearance": 0.0015,
+        "settle_seconds": 0.1,
+        "settle_timeout": 2.0,
+        "slider_linear_tolerance": 0.0015,
+        "slider_angular_tolerance": 0.02,
+        "pose_replan_distance": 0.001,
+        "pose_replan_angle": 0.02,
+        "max_replans": 3,
+        "max_seconds": 30.0,
+        "approach_timeout": 10.0,
+        "contact_hold_seconds": 0.04,
+        "preload_depth": 0.0001,
+        "max_approach_penetration": 0.0008,
+        "max_recovery_penetration": 0.001
+      },
+      "planner": {
+        "clearance": 0.005,
+        "vertex_padding": 0.001,
+        "precontact_gap": 0.008,
+        "max_recovery_penetration": 0.001
+      },
+      "cost": {
+        "retreat_speed": 0.015,
+        "transit_speed": 0.03,
+        "approach_speed": 0.003,
+        "turn_seconds_per_radian": 0.05,
+        "fixed_settle_seconds": 0.1
+      }
+    }
+  },
+  "rotated": {
+    "start": {
+      "face": "top",
+      "s": 0.0
+    },
+    "target": {
+      "face": "right",
+      "s": -0.018
+    },
+    "theta": 0.7,
+    "initial_pusher_position": [
+      -0.03219464010500523,
+      0.0382226865322781
+    ],
+    "final_pusher_position": [
+      0.04194653039023999,
+      0.05885027855611834
+    ],
+    "termination": "ready:loaded_target_contact",
+    "steps": 393,
+    "duration_s": 7.860000000007842,
+    "actual_length_m": 0.12705513559427406,
+    "final_contact": {
+      "face": "right",
+      "measured_s": -0.017999639737293918,
+      "gap": -5.649652509756228e-06,
+      "in_bounds": true,
+      "loaded": true,
+      "normal_force": 0.06998341509083797,
+      "slip_speed": 2.3060353342217664e-06,
+      "point_error": 2.824806168172557e-06
+    },
+    "final_contact_matches": true,
+    "min_transit_clearance_m": 0.005646482024282725,
+    "transit_loaded_samples": 0,
+    "max_transit_slider_translation_m": 2.3140280995566624e-12,
+    "total_slider_translation_m": 2.764617392626084e-06,
+    "max_speed_m_s": 0.030000000000000006,
+    "plans": [
+      {
+        "time": 0.22000000000000425,
+        "reason": "initial_plan",
+        "plan": {
+          "target": {
+            "face": "right",
+            "s": -0.018
+          },
+          "waypoints_world": [
+            [
+              -0.03219464010500523,
+              0.0382226865322781
+            ],
+            [
+              -0.036071441653509805,
+              0.042825880191474895
+            ],
+            [
+              0.022062997540260292,
+              0.09178660193681601
+            ],
+            [
+              0.04807148912851528,
+              0.06400966248511131
+            ]
+          ],
+          "slider_pose_anchor": [
+            6.340788380250238e-06,
+            -3.941655265094947e-06,
+            0.6999472606577126
+          ],
+          "retreat_end_index": 1,
+          "precontact_gap": 0.008,
+          "clearance": 0.005
+        },
+        "length_m": 0.12007585068699547,
+        "cost": {
+          "total": 7.205421833339781,
+          "unit": "s",
+          "components": [
+            [
+              "Jtravel_m",
+              0.12007585068699547
+            ],
+            [
+              "retreat_m",
+              0.006018220842620934
+            ],
+            [
+              "transit_m",
+              0.11405762984437454
+            ],
+            [
+              "approach_m",
+              0.008
+            ],
+            [
+              "nominal_motion_s",
+              6.869802384320547
+            ],
+            [
+              "turn_radians",
+              4.71238898038469
+            ],
+            [
+              "turn_penalty_s",
+              0.23561944901923448
+            ],
+            [
+              "settle_s",
+              0.1
+            ]
+          ]
+        }
+      }
+    ],
+    "events": [
+      {
+        "time": 8.060000000007893,
+        "event": "ready",
+        "reason": "loaded_target_contact"
+      }
+    ],
+    "viewer": false,
+    "configs": {
+      "env": {
+        "slider_size": [
+          0.12,
+          0.08,
+          0.02
+        ],
+        "slider_mass": 0.2,
+        "slider_pose": [
+          0.0,
+          0.0,
+          0.7
+        ],
+        "pusher_position": null,
+        "pusher_radius": 0.01,
+        "pusher_height": 0.016,
+        "goal_pose": [
+          0.12,
+          0.03,
+          0.4
+        ],
+        "mu_ground": 0.3,
+        "mu_pusher": 0.5,
+        "dt_physics": 0.0002,
+        "dt_control": 0.02,
+        "max_pusher_speed": 0.08,
+        "pusher_mode": "velocity_servo",
+        "pusher_servo_gain": 500.0,
+        "pusher_mass": 0.1
+      },
+      "motion": {
+        "dt": 0.02,
+        "retreat_speed": 0.015,
+        "transit_speed": 0.03,
+        "approach_speed": 0.003,
+        "position_gain": 6.0,
+        "waypoint_tolerance": 0.0004,
+        "execution_clearance": 0.0015,
+        "settle_seconds": 0.1,
+        "settle_timeout": 2.0,
+        "slider_linear_tolerance": 0.0015,
+        "slider_angular_tolerance": 0.02,
+        "pose_replan_distance": 0.001,
+        "pose_replan_angle": 0.02,
+        "max_replans": 3,
+        "max_seconds": 30.0,
+        "approach_timeout": 10.0,
+        "contact_hold_seconds": 0.04,
+        "preload_depth": 0.0001,
+        "max_approach_penetration": 0.0008,
+        "max_recovery_penetration": 0.001
+      },
+      "planner": {
+        "clearance": 0.005,
+        "vertex_padding": 0.001,
+        "precontact_gap": 0.008,
+        "max_recovery_penetration": 0.001
+      },
+      "cost": {
+        "retreat_speed": 0.015,
+        "transit_speed": 0.03,
+        "approach_speed": 0.003,
+        "turn_seconds_per_radian": 0.05,
+        "fixed_settle_seconds": 0.1
+      }
+    }
+  },
+  "free_start": {
+    "start": {
+      "face": "left",
+      "s": 0.0
+    },
+    "target": {
+      "face": "top",
+      "s": 0.02
+    },
+    "theta": 0.0,
+    "initial_pusher_position": [
+      0.14,
+      -0.12
+    ],
+    "final_pusher_position": [
+      0.020000252812895525,
+      0.049990185388177184
+    ],
+    "termination": "ready:loaded_target_contact",
+    "steps": 582,
+    "duration_s": 11.63999999999908,
+    "actual_length_m": 0.2507845443204691,
+    "final_contact": {
+      "face": "top",
+      "measured_s": 0.019999564787446713,
+      "gap": -5.601443764253686e-06,
+      "in_bounds": true,
+      "loaded": true,
+      "normal_force": 0.06948045483782421,
+      "slip_speed": -1.747127355883693e-06,
+      "point_error": 3.433502776975942e-06
+    },
+    "final_contact_matches": true,
+    "min_transit_clearance_m": 0.006308613005390434,
+    "transit_loaded_samples": 0,
+    "max_transit_slider_translation_m": 0.0,
+    "total_slider_translation_m": 3.921911760484028e-06,
+    "max_speed_m_s": 0.030000000000000006,
+    "plans": [
+      {
+        "time": 0.20000000000000367,
+        "reason": "initial_plan",
+        "plan": {
+          "target": {
+            "face": "top",
+            "s": 0.02
+          },
+          "waypoints_world": [
+            [
+              0.14,
+              -0.12
+            ],
+            [
+              0.076,
+              0.056
+            ],
+            [
+              0.02,
+              0.058
+            ]
+          ],
+          "slider_pose_anchor": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "retreat_end_index": 0,
+          "precontact_gap": 0.008,
+          "clearance": 0.005
+        },
+        "length_m": 0.2433109014760016,
+        "cost": {
+          "total": 11.016671131700347,
+          "unit": "s",
+          "components": [
+            [
+              "Jtravel_m",
+              0.2433109014760016
+            ],
+            [
+              "retreat_m",
+              0.0
+            ],
+            [
+              "transit_m",
+              0.2433109014760016
+            ],
+            [
+              "approach_m",
+              0.008
+            ],
+            [
+              "nominal_motion_s",
+              10.777030049200054
+            ],
+            [
+              "turn_radians",
+              2.7928216500058864
+            ],
+            [
+              "turn_penalty_s",
+              0.13964108250029433
+            ],
+            [
+              "settle_s",
+              0.1
+            ]
+          ]
+        }
+      }
+    ],
+    "events": [
+      {
+        "time": 11.81999999999913,
+        "event": "ready",
+        "reason": "loaded_target_contact"
+      }
+    ],
+    "viewer": false,
+    "configs": {
+      "env": {
+        "slider_size": [
+          0.12,
+          0.08,
+          0.02
+        ],
+        "slider_mass": 0.2,
+        "slider_pose": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pusher_position": null,
+        "pusher_radius": 0.01,
+        "pusher_height": 0.016,
+        "goal_pose": [
+          0.12,
+          0.03,
+          0.4
+        ],
+        "mu_ground": 0.3,
+        "mu_pusher": 0.5,
+        "dt_physics": 0.0002,
+        "dt_control": 0.02,
+        "max_pusher_speed": 0.08,
+        "pusher_mode": "velocity_servo",
+        "pusher_servo_gain": 500.0,
+        "pusher_mass": 0.1
+      },
+      "motion": {
+        "dt": 0.02,
+        "retreat_speed": 0.015,
+        "transit_speed": 0.03,
+        "approach_speed": 0.003,
+        "position_gain": 6.0,
+        "waypoint_tolerance": 0.0004,
+        "execution_clearance": 0.0015,
+        "settle_seconds": 0.1,
+        "settle_timeout": 2.0,
+        "slider_linear_tolerance": 0.0015,
+        "slider_angular_tolerance": 0.02,
+        "pose_replan_distance": 0.001,
+        "pose_replan_angle": 0.02,
+        "max_replans": 3,
+        "max_seconds": 30.0,
+        "approach_timeout": 10.0,
+        "contact_hold_seconds": 0.04,
+        "preload_depth": 0.0001,
+        "max_approach_penetration": 0.0008,
+        "max_recovery_penetration": 0.001
+      },
+      "planner": {
+        "clearance": 0.005,
+        "vertex_padding": 0.001,
+        "precontact_gap": 0.008,
+        "max_recovery_penetration": 0.001
+      },
+      "cost": {
+        "retreat_speed": 0.015,
+        "transit_speed": 0.03,
+        "approach_speed": 0.003,
+        "turn_seconds_per_radian": 0.05,
+        "fixed_settle_seconds": 0.1
+      }
+    }
+  }
+}

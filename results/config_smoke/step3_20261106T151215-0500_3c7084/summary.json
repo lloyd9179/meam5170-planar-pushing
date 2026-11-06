@@ -1,0 +1,251 @@
+{
+  "translation": {
+    "task": "translation",
+    "contract_version": 1,
+    "termination": "succeeded",
+    "initial_pose": [
+      2.6801187222876277e-06,
+      2.2168715079597195e-14,
+      4.882373707787918e-12
+    ],
+    "final_pose": [
+      0.04558815733451349,
+      3.188298978359296e-05,
+      -2.1392000986012955e-06
+    ],
+    "goal": [
+      0.05,
+      0.0,
+      0.0
+    ],
+    "initial_position_error_m": 0.049997319881277716,
+    "final_position_error_m": 0.004411957868117586,
+    "final_yaw_error_rad": 2.1392000986012955e-06,
+    "steps": 111,
+    "solve_count": 96,
+    "solver_failures": 0,
+    "mean_solve_time_ms": 11.047885750040601,
+    "max_constraint_violation": 3.448689378254945e-17,
+    "slip_flag_steps": 0,
+    "initial_selection": {
+      "target": {
+        "face": "left",
+        "s": 0.0
+      },
+      "reason": "rule_primary:normal_alignment=1.000;yaw_error=0.000000;s=0.000000;trigger=initial"
+    },
+    "unloaded_contact_samples": 10,
+    "max_s_drift_m": 3.815559676942322e-05,
+    "events": [
+      {
+        "time": 0.22000000000000425,
+        "event": "selection",
+        "face": "left",
+        "s": 0.0,
+        "reason": "rule_primary:normal_alignment=1.000;yaw_error=-0.000000;s=0.000000;trigger=initial"
+      },
+      {
+        "time": 0.22000000000000425,
+        "previous": "select",
+        "phase": "confirm_contact",
+        "reason": "rule_primary:normal_alignment=1.000;yaw_error=-0.000000;s=0.000000;trigger=initial"
+      },
+      {
+        "time": 0.2800000000000018,
+        "previous": "confirm_contact",
+        "phase": "push",
+        "reason": "contact_confirmed"
+      },
+      {
+        "time": 2.2199999999997884,
+        "previous": "push",
+        "phase": "goal_hold",
+        "reason": "goal_within_tolerance"
+      },
+      {
+        "time": 2.4199999999997663,
+        "previous": "goal_hold",
+        "phase": "succeeded",
+        "reason": "goal_confirmed"
+      }
+    ],
+    "selection_attempts": 1,
+    "reposition_request": null,
+    "configs": {
+      "env": {
+        "slider_size": [
+          0.12,
+          0.08,
+          0.02
+        ],
+        "slider_mass": 0.2,
+        "slider_pose": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pusher_position": null,
+        "pusher_radius": 0.01,
+        "pusher_height": 0.016,
+        "goal_pose": [
+          0.05,
+          0.0,
+          0.0
+        ],
+        "mu_ground": 0.3,
+        "mu_pusher": 0.5,
+        "dt_physics": 0.0002,
+        "dt_control": 0.02,
+        "max_pusher_speed": 0.08,
+        "pusher_mode": "velocity_servo",
+        "pusher_servo_gain": 500.0,
+        "pusher_mass": 0.1
+      },
+      "model": {
+        "slider_length": 0.12,
+        "slider_width": 0.08,
+        "ell": 0.041633319989322654,
+        "mu_pusher": 0.5,
+        "mu_ground_nominal": 0.3,
+        "fd_step": 1e-06,
+        "corner_margin": 0.002
+      },
+      "mpc": {
+        "horizon": 15,
+        "dt": 0.02,
+        "Q": [
+          [
+            20.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            20.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            5.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "Qf": [
+          [
+            80.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            80.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            20.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "R": [
+          [
+            0.1,
+            0.0
+          ],
+          [
+            0.0,
+            0.1
+          ]
+        ],
+        "Rd": [
+          [
+            0.2,
+            0.0
+          ],
+          [
+            0.0,
+            0.2
+          ]
+        ],
+        "velocity_lower": [
+          0.0,
+          -0.025
+        ],
+        "velocity_upper": [
+          0.025,
+          0.025
+        ],
+        "warm_start": true,
+        "regularization": 1e-09,
+        "eps_abs": 1e-07,
+        "eps_rel": 1e-07,
+        "max_iter": 4000,
+        "acceptance_tolerance": 5e-06
+      },
+      "geometry": {
+        "length": 0.12,
+        "width": 0.08,
+        "pusher_radius": 0.01,
+        "corner_margin": 0.002
+      },
+      "rule": {
+        "rotation_gain": 0.16,
+        "rotation_deadband": 0.02,
+        "max_offset_fraction": 0.6,
+        "translation_deadband": 0.005,
+        "face_hysteresis": 0.1,
+        "blocked_s_tolerance": 0.003
+      },
+      "monitor": {
+        "load_threshold": 0.01,
+        "face_distance_tolerance": 0.0015,
+        "match_s_tolerance": 0.003,
+        "match_gap_tolerance": 0.0005,
+        "slip_flag_speed": 0.002
+      },
+      "supervisor": {
+        "position_tolerance": 0.005,
+        "angle_tolerance": 0.05235987755982989,
+        "goal_hold_seconds": 0.2,
+        "contact_confirm_seconds": 0.06,
+        "contact_confirm_timeout": 0.5,
+        "min_contact_hold_seconds": 0.5,
+        "loss_gap": 0.0005,
+        "loss_seconds": 0.06,
+        "max_s_drift": 0.008,
+        "max_contact_penetration": 0.0015,
+        "max_task_seconds": 30.0,
+        "max_selection_attempts": 4,
+        "max_command_speed": 0.08
+      },
+      "progress": {
+        "window_seconds": 1.0,
+        "position_scale": 0.04,
+        "angle_scale": 0.15,
+        "min_absolute_decrease": 0.01,
+        "min_relative_decrease": 0.02,
+        "min_samples": 10
+      }
+    },
+    "viewer": false,
+    "step4_implemented": false
+  }
+}

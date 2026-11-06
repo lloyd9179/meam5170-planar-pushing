@@ -1,0 +1,170 @@
+{
+  "model_config": {
+    "slider_length": 0.12,
+    "slider_width": 0.08,
+    "ell": 0.041633319989322654,
+    "mu_pusher": 0.5,
+    "mu_ground_nominal": 0.3,
+    "fd_step": 1e-06,
+    "corner_margin": 0.002
+  },
+  "dt": 0.02,
+  "cases": {
+    "center_0.005": {
+      "s": 0.0,
+      "speed_m_s": 0.005,
+      "duration_s": 3.0,
+      "one_step_position_rmse_m": 7.941876538542352e-06,
+      "one_step_yaw_rmse_rad": 5.535489257227541e-09,
+      "open_loop_final_position_error_m": 5.7971806038496864e-05,
+      "open_loop_final_yaw_error_rad": 4.891193279170734e-08,
+      "actual_delta": [
+        0.01494202819399293,
+        1.79765677661441e-09,
+        -4.365919832030387e-08,
+        -5.277362016783115e-09
+      ],
+      "predicted_delta": [
+        0.014999999999999963,
+        -1.1234545990478781e-10,
+        5.252734471403471e-09,
+        0.0
+      ],
+      "contact_lost_steps": 0,
+      "slip_flag_steps": 0,
+      "max_s_drift_m": 5.7741435829663e-09,
+      "max_contact_point_error_m": 4.7824388374920306e-05,
+      "assumptions": "Point velocity approximation; slip flag threshold 2 mm/s; no trajectory filtering"
+    },
+    "center_0.010": {
+      "s": 0.0,
+      "speed_m_s": 0.01,
+      "duration_s": 3.0,
+      "one_step_position_rmse_m": 9.62683231471206e-06,
+      "one_step_yaw_rmse_rad": 2.7385724475456738e-08,
+      "open_loop_final_position_error_m": 0.00012558966907301496,
+      "open_loop_final_yaw_error_rad": 3.4975625738353827e-07,
+      "actual_delta": [
+        0.029874410333027897,
+        -2.4268168193504174e-08,
+        -2.7917755770336035e-07,
+        -7.5676876693564e-10
+      ],
+      "predicted_delta": [
+        0.029999999999999194,
+        -1.2919142155289547e-09,
+        7.057869968017788e-08,
+        0.0
+      ],
+      "contact_lost_steps": 0,
+      "slip_flag_steps": 0,
+      "max_s_drift_m": 6.579211527000578e-09,
+      "max_contact_point_error_m": 8.245135073293273e-05,
+      "assumptions": "Point velocity approximation; slip flag threshold 2 mm/s; no trajectory filtering"
+    },
+    "center_0.020": {
+      "s": 0.0,
+      "speed_m_s": 0.02,
+      "duration_s": 3.0,
+      "one_step_position_rmse_m": 1.9757986576516158e-05,
+      "one_step_yaw_rmse_rad": 6.797131658151677e-08,
+      "open_loop_final_position_error_m": 0.0002723328395327728,
+      "open_loop_final_yaw_error_rad": 2.7540712123596616e-07,
+      "actual_delta": [
+        0.05972766716641942,
+        6.042649116660652e-08,
+        5.048493085684939e-07,
+        -3.5550562318761664e-08
+      ],
+      "predicted_delta": [
+        0.05999999999999343,
+        3.4568998154771765e-09,
+        2.2944218733252776e-07,
+        0.0
+      ],
+      "contact_lost_steps": 0,
+      "slip_flag_steps": 0,
+      "max_s_drift_m": 3.5550562318761664e-08,
+      "max_contact_point_error_m": 0.00019605506744070617,
+      "assumptions": "Point velocity approximation; slip flag threshold 2 mm/s; no trajectory filtering"
+    },
+    "offcenter_0.005": {
+      "s": 0.02,
+      "speed_m_s": 0.005,
+      "duration_s": 3.0,
+      "one_step_position_rmse_m": 1.466172638206976e-05,
+      "one_step_yaw_rmse_rad": 6.276073536905551e-05,
+      "open_loop_final_position_error_m": 0.0015942706159403556,
+      "open_loop_final_yaw_error_rad": 0.006967994684741713,
+      "actual_delta": [
+        0.014015263038947871,
+        -0.001899065864241389,
+        -0.04584157327109494,
+        -0.001630928678949553
+      ],
+      "predicted_delta": [
+        0.013855857617701911,
+        -0.0034853472732379893,
+        -0.052809567955836655,
+        0.0
+      ],
+      "contact_lost_steps": 0,
+      "slip_flag_steps": 0,
+      "max_s_drift_m": 0.001630928678949553,
+      "max_contact_point_error_m": 4.831518707118453e-05,
+      "assumptions": "Point velocity approximation; slip flag threshold 2 mm/s; no trajectory filtering"
+    },
+    "offcenter_0.010": {
+      "s": 0.02,
+      "speed_m_s": 0.01,
+      "duration_s": 3.0,
+      "one_step_position_rmse_m": 2.0123482195949694e-05,
+      "one_step_yaw_rmse_rad": 5.4796390836852935e-05,
+      "open_loop_final_position_error_m": 0.0031484498700484836,
+      "open_loop_final_yaw_error_rad": 0.015149032037966123,
+      "actual_delta": [
+        0.02799957986198744,
+        -0.004553507916017289,
+        -0.09146680702637182,
+        -0.003143691888889053
+      ],
+      "predicted_delta": [
+        0.027490504082113013,
+        -0.007660528745453995,
+        -0.10661583906433794,
+        0.0
+      ],
+      "contact_lost_steps": 0,
+      "slip_flag_steps": 0,
+      "max_s_drift_m": 0.003143691888889053,
+      "max_contact_point_error_m": 0.00011522359851765253,
+      "assumptions": "Point velocity approximation; slip flag threshold 2 mm/s; no trajectory filtering"
+    },
+    "offcenter_0.020": {
+      "s": 0.02,
+      "speed_m_s": 0.02,
+      "duration_s": 3.0,
+      "one_step_position_rmse_m": 3.683693901081851e-05,
+      "one_step_yaw_rmse_rad": 0.00012584735279258307,
+      "open_loop_final_position_error_m": 0.006993270017525371,
+      "open_loop_final_yaw_error_rad": 0.052662192554007003,
+      "actual_delta": [
+        0.0559873779987865,
+        -0.011298271635689536,
+        -0.16876026732503427,
+        -0.005463740155864176
+      ],
+      "predicted_delta": [
+        0.053848472177517925,
+        -0.017956417580752823,
+        -0.22142245987904127,
+        0.0
+      ],
+      "contact_lost_steps": 0,
+      "slip_flag_steps": 9,
+      "max_s_drift_m": 0.005463740155864176,
+      "max_contact_point_error_m": 0.0001689008168005028,
+      "assumptions": "Point velocity approximation; slip flag threshold 2 mm/s; no trajectory filtering"
+    }
+  }
+}

@@ -1,0 +1,546 @@
+{
+  "model_translation": {
+    "task": "translation",
+    "backend": "model",
+    "goal": [
+      0.04,
+      0.0,
+      0.0
+    ],
+    "initial": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "final": [
+      0.03999999999803043,
+      1.4349916533111634e-37,
+      -4.967278799923257e-36,
+      0.0
+    ],
+    "initial_position_error_m": 0.04,
+    "final_position_error_m": 1.9695703401545472e-12,
+    "initial_yaw_error_rad": 0.0,
+    "final_yaw_error_rad": 4.967278799923257e-36,
+    "termination": "duration_complete",
+    "execution_steps": 300,
+    "solve_count": 300,
+    "fallbacks": 0,
+    "slip_flag_steps": 0,
+    "contact_lost_steps": 0,
+    "sticking_infeasible_commands": 0,
+    "max_s_drift_m": 0.0,
+    "mean_solve_time_ms": 23.305169796661477,
+    "max_solve_time_ms": 34.26572300031694,
+    "max_constraint_violation": 2.7755575615628914e-17,
+    "total_wall_s": 7.0312221550002505,
+    "model_config": {
+      "slider_length": 0.12,
+      "slider_width": 0.08,
+      "ell": 0.041633319989322654,
+      "mu_pusher": 0.5,
+      "mu_ground_nominal": 0.3,
+      "fd_step": 1e-06,
+      "corner_margin": 0.002
+    },
+    "mpc_config": {
+      "horizon": 15,
+      "dt": 0.02,
+      "Q": [
+        [
+          20.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          20.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          5.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "Qf": [
+        [
+          80.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          80.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          20.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "R": [
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.0,
+          0.1
+        ]
+      ],
+      "Rd": [
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.0,
+          0.2
+        ]
+      ],
+      "velocity_lower": [
+        0.0,
+        -0.025
+      ],
+      "velocity_upper": [
+        0.025,
+        0.025
+      ],
+      "warm_start": true,
+      "regularization": 1e-09,
+      "eps_abs": 1e-07,
+      "eps_rel": 1e-07,
+      "max_iter": 4000,
+      "acceptance_tolerance": 5e-06
+    }
+  },
+  "model_rotation": {
+    "task": "rotation",
+    "backend": "model",
+    "goal": [
+      0.03293194288959019,
+      -0.009601306146257595,
+      -0.1255813953488375
+    ],
+    "initial": [
+      0.0,
+      0.0,
+      0.0,
+      0.02
+    ],
+    "final": [
+      0.03218430467678511,
+      -0.011158880179620445,
+      -0.12577079715610331,
+      0.02
+    ],
+    "initial_position_error_m": 0.03430303109343829,
+    "final_position_error_m": 0.0017277151867864655,
+    "initial_yaw_error_rad": 0.1255813953488375,
+    "final_yaw_error_rad": 0.00018940180726581546,
+    "termination": "duration_complete",
+    "execution_steps": 300,
+    "solve_count": 300,
+    "fallbacks": 0,
+    "slip_flag_steps": 0,
+    "contact_lost_steps": 0,
+    "sticking_infeasible_commands": 0,
+    "max_s_drift_m": 0.0,
+    "mean_solve_time_ms": 23.280019343324057,
+    "max_solve_time_ms": 23.84906699990097,
+    "max_constraint_violation": 1.7218247669596369e-10,
+    "total_wall_s": 7.0239134010003,
+    "model_config": {
+      "slider_length": 0.12,
+      "slider_width": 0.08,
+      "ell": 0.041633319989322654,
+      "mu_pusher": 0.5,
+      "mu_ground_nominal": 0.3,
+      "fd_step": 1e-06,
+      "corner_margin": 0.002
+    },
+    "mpc_config": {
+      "horizon": 15,
+      "dt": 0.02,
+      "Q": [
+        [
+          20.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          20.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          5.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "Qf": [
+        [
+          80.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          80.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          20.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "R": [
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.0,
+          0.1
+        ]
+      ],
+      "Rd": [
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.0,
+          0.2
+        ]
+      ],
+      "velocity_lower": [
+        0.0,
+        -0.025
+      ],
+      "velocity_upper": [
+        0.025,
+        0.025
+      ],
+      "warm_start": true,
+      "regularization": 1e-09,
+      "eps_abs": 1e-07,
+      "eps_rel": 1e-07,
+      "max_iter": 4000,
+      "acceptance_tolerance": 5e-06
+    }
+  },
+  "mujoco_translation": {
+    "task": "translation",
+    "backend": "mujoco",
+    "goal": [
+      0.04,
+      0.0,
+      0.0
+    ],
+    "initial": [
+      2.3764416976936715e-06,
+      -8.161994064389837e-12,
+      -4.552995556783125e-09,
+      -3.111475435964847e-10
+    ],
+    "final": [
+      0.017569954023475016,
+      5.242322335704084e-09,
+      -6.023953757852909e-07,
+      2.210725597023156e-08
+    ],
+    "initial_position_error_m": 0.03999762355830231,
+    "final_position_error_m": 0.022430045976525596,
+    "initial_yaw_error_rad": 4.552995556783125e-09,
+    "final_yaw_error_rad": 6.023953757852909e-07,
+    "termination": "contact_lost",
+    "execution_steps": 36,
+    "solve_count": 36,
+    "fallbacks": 0,
+    "slip_flag_steps": 0,
+    "contact_lost_steps": 9,
+    "sticking_infeasible_commands": 0,
+    "max_s_drift_m": 5.938231509056295e-08,
+    "mean_solve_time_ms": 23.396235888955946,
+    "max_solve_time_ms": 23.95835299967075,
+    "max_constraint_violation": 1.393485229195147e-17,
+    "total_wall_s": 0.8951379049999559,
+    "model_config": {
+      "slider_length": 0.12,
+      "slider_width": 0.08,
+      "ell": 0.041633319989322654,
+      "mu_pusher": 0.5,
+      "mu_ground_nominal": 0.3,
+      "fd_step": 1e-06,
+      "corner_margin": 0.002
+    },
+    "mpc_config": {
+      "horizon": 15,
+      "dt": 0.02,
+      "Q": [
+        [
+          20.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          20.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          5.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "Qf": [
+        [
+          80.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          80.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          20.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "R": [
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.0,
+          0.1
+        ]
+      ],
+      "Rd": [
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.0,
+          0.2
+        ]
+      ],
+      "velocity_lower": [
+        0.0,
+        -0.025
+      ],
+      "velocity_upper": [
+        0.025,
+        0.025
+      ],
+      "warm_start": true,
+      "regularization": 1e-09,
+      "eps_abs": 1e-07,
+      "eps_rel": 1e-07,
+      "max_iter": 4000,
+      "acceptance_tolerance": 5e-06
+    }
+  },
+  "mujoco_rotation": {
+    "task": "rotation",
+    "backend": "mujoco",
+    "goal": [
+      0.03293194288959019,
+      -0.009601306146257595,
+      -0.1255813953488375
+    ],
+    "initial": [
+      2.6844896667818816e-06,
+      -3.422076165868514e-08,
+      -1.1266267215320035e-05,
+      0.019999334403615825
+    ],
+    "final": [
+      0.0015169946691001395,
+      0.0005520997690933859,
+      -0.023659925753744426,
+      0.01925440056638816
+    ],
+    "initial_position_error_m": 0.03430044433176111,
+    "final_position_error_m": 0.03301500603328667,
+    "initial_yaw_error_rad": 0.12557012908162218,
+    "final_yaw_error_rad": 0.10192146959509307,
+    "termination": "contact_lost",
+    "execution_steps": 3,
+    "solve_count": 3,
+    "fallbacks": 0,
+    "slip_flag_steps": 0,
+    "contact_lost_steps": 3,
+    "sticking_infeasible_commands": 0,
+    "max_s_drift_m": 0.001466600316199742,
+    "mean_solve_time_ms": 23.498110333396955,
+    "max_solve_time_ms": 23.641369999950257,
+    "max_constraint_violation": 1.1817803680091998e-16,
+    "total_wall_s": 0.07554363400004149,
+    "model_config": {
+      "slider_length": 0.12,
+      "slider_width": 0.08,
+      "ell": 0.041633319989322654,
+      "mu_pusher": 0.5,
+      "mu_ground_nominal": 0.3,
+      "fd_step": 1e-06,
+      "corner_margin": 0.002
+    },
+    "mpc_config": {
+      "horizon": 15,
+      "dt": 0.02,
+      "Q": [
+        [
+          20.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          20.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          5.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "Qf": [
+        [
+          80.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          80.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          20.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "R": [
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.0,
+          0.1
+        ]
+      ],
+      "Rd": [
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.0,
+          0.2
+        ]
+      ],
+      "velocity_lower": [
+        0.0,
+        -0.025
+      ],
+      "velocity_upper": [
+        0.025,
+        0.025
+      ],
+      "warm_start": true,
+      "regularization": 1e-09,
+      "eps_abs": 1e-07,
+      "eps_rel": 1e-07,
+      "max_iter": 4000,
+      "acceptance_tolerance": 5e-06
+    }
+  }
+}

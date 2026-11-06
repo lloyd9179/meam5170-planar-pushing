@@ -1,0 +1,39 @@
+{
+  "env": {
+    "pusher_mode": "velocity_servo",
+    "dt_control": 0.02,
+    "dt_physics": 0.0002,
+    "pusher_servo_gain": 500.0,
+    "mu_ground": 0.3,
+    "mu_pusher": 0.5
+  },
+  "model": {
+    "mu_ground_nominal": 0.3,
+    "mu_pusher": 0.5
+  },
+  "planner": {
+    "clearance": 0.005,
+    "vertex_padding": 0.001,
+    "precontact_gap": 0.008,
+    "max_recovery_penetration": 0.001
+  },
+  "motion": {
+    "dt": 0.02,
+    "retreat_speed": 0.015,
+    "transit_speed": 0.03,
+    "approach_speed": 0.003,
+    "waypoint_tolerance": 0.0004,
+    "execution_clearance": 0.0015,
+    "pose_replan_distance": 0.001,
+    "pose_replan_angle": 0.02,
+    "max_replans": 3,
+    "max_seconds": 30.0
+  },
+  "travel_cost": {
+    "retreat_speed": 0.015,
+    "transit_speed": 0.03,
+    "approach_speed": 0.003,
+    "turn_seconds_per_radian": 0.05,
+    "fixed_settle_seconds": 0.1
+  }
+}

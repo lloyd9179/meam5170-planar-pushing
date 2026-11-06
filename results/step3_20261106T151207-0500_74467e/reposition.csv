@@ -1,0 +1,2 @@
+time_s,phase,reason,face,desired_s,measured_s,gap,loaded,slip_speed,slip_flag,vx,vy,solver_status,solve_time_s,solver_feasible,iterations,constraint_violation,objective,progress_metric,progress_decrease
+0.0,reposition_required,step4_required:initial,left,0.0,,,,,False,0.0,0.0,,,,,,,,
